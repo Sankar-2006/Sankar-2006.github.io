@@ -1,0 +1,125 @@
+:root {
+    --mainColor: #8a2be2;
+    --textColor: #fff;
+    --transition: .2s ease-in-out;
+}
+
+/* header content */
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background: transparent;
+    user-select: none;
+    padding: 30px 20px;
+    transition: var(--transition);
+}
+
+#logo a {
+    text-transform: capitalize;
+    position: relative;
+    left: 30px;
+    color: var(--textColor);
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0;
+    transition: var(--transition);
+    animation: right .8s ease-in-out forwards;
+}
+
+#logo a:hover {
+    color: var(--mainColor);
+}
+
+nav a.nav {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 5px;
+    margin-right: 50px;
+    position: relative;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+nav a.nav:nth-child(1) {
+    animation: top .5s ease forwards;
+    animation-delay: calc(.2s * 1);
+}
+
+nav a.nav:nth-child(2) {
+    animation: top .5s ease forwards;
+    animation-delay: calc(.2s * 2);
+}
+
+nav a.nav:nth-child(3) {
+    animation: top .5s ease forwards;
+    animation-delay: calc(.2s * 3);
+}
+
+nav a.nav:nth-child(4) {
+    animation: top .5s ease forwards;
+    animation-delay: calc(.2s * 4);
+}
+
+nav a.nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 30px;
+    height: 3px;
+    width: 0;
+    margin: 0 auto;
+    transition: var(--transition);
+    background-color: var(--mainColor);
+}
+
+nav a.nav:hover::after {
+    width: 100%;
+}
+
+nav a.active:hover::after {
+    width: 0;
+}
+
+nav a.nav:hover,
+nav a.active {
+    color: var(--mainColor);
+}
+
+/* animations */
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        left: -100px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 30px;
+    }
+}
+
+@keyframes top {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
