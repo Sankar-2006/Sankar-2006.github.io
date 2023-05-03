@@ -1,11 +1,11 @@
 :root {
-    --mainColor:#8a2be2;
+    --mainColor: #8a2be2;
     --textColor: #fff;
 }
 
 /* main content */
 
-main { 
+main {
     height: 100vh;
     color: var(--textColor);
 }
@@ -35,14 +35,15 @@ main {
     animation: fromleft 1s ease forwards .8s;
 }
 
-.homeText  h3 {
+.homeText h3 {
     font-size: 30px;
     font-weight: 600;
     opacity: 0;
     animation: fromtop 1s ease forwards .5s;
 }
 
-.homeText h3 span, .homeText h1 span {
+.homeText h3 span,
+.homeText h1 span {
     color: var(--mainColor);
 }
 
@@ -61,7 +62,7 @@ main {
 }
 
 .homeImage img {
-    width: 550px;
+    width: 600px;
     opacity: 0;
     animation: fade .5s ease forwards .5s;
 }
@@ -88,6 +89,66 @@ main {
     background-color: var(--mainColor);
     border-color: var(--mainColor);
 }
+
+/* about */
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    height: 100vh;
+    background-color: #353535;
+    padding: 70px 50px 0;
+}
+
+.aboutImage img {
+    width: 500px;
+}
+
+.aboutText h2 {
+    font-size: 30px;
+    transform: translateY(-20px);
+}
+
+.aboutText h2 span {
+    color: var(--mainColor);
+    font-size: 35px;
+}
+
+.aboutText p {
+    text-align: justify;
+}
+
+.aboutText button {
+    border: 2px solid var(--textColor);
+    color: var(--textColor);
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    transform: translateY(20px);
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.aboutText button:hover {
+    background-color: var(--mainColor);
+    border: none;
+    color: #353535;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* animations */
 
