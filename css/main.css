@@ -54,7 +54,7 @@ main {
 .homeText p {
     font-size: 17px;
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: justify;
     opacity: 0;
     animation: left 1s ease forwards;
@@ -107,17 +107,18 @@ main {
 }
 
 .aboutText h2 {
-    font-size: 30px;
+    font-size: 35px;
     transform: translateY(-20px);
 }
 
 .aboutText h2 span {
     color: var(--mainColor);
-    font-size: 35px;
+    font-size: 37px;
 }
 
 .aboutText p {
     text-align: justify;
+    line-height: 25px;
 }
 
 .aboutText button {
@@ -140,15 +141,187 @@ main {
     color: #353535;
 }
 
+/* Languages */
 
+#Languages {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+#Languages div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
+#Languages div span {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+}
 
+#Languages div.HTML span {
+    position: absolute;
+    left: 10px;
+    top: 78px;
+}
 
+#Languages div.HTML {
+    border: 2px solid var(--mainColor);
+    border-left-color: #999;
+    transform: rotate(45deg);
+}
 
+#Languages div.CSS span {
+    position: absolute;
+    top: 77px;
+    right: 8px;
 
+}
 
+#Languages div.CSS {
+    border: 2px solid var(--mainColor);
+    border-left-color: #999;
+    border-bottom-color: #999;
+    transform: rotate(45deg);
+}
 
+#Languages div.HTML p,
+#Languages div.CSS p {
+    transform: rotate(-45deg);
+    text-align: center;
+}
+
+#Languages div.JS span {
+    position: absolute;
+    top: 77px;
+    right: 8px;
+
+}
+
+#Languages div.JS {
+    border: 2px solid #999;
+    border-right-color: var(--mainColor);
+    transform: rotate(-45deg);
+}
+
+#Languages div.JS p {
+    transform: rotate(45deg);
+    text-align: center;
+}
+
+/* contact me */
+
+#contactme {
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #353535;
+}
+
+#contactme h2 {
+    font-size: 35px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#contactme h2 span {
+    color: var(--mainColor);
+    font-size: 37px;
+}
+
+#contactme form {
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#contactme form .inpt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inpt input,
+#contactme form textarea {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    color: var(--mainColor);
+    background: #252525;
+    margin: 5px 0;
+}
+
+.inpt input {
+    width: 49.5%;
+}
+
+.inpt .subject {
+    width: 100%;
+}
+
+#contactme form textarea {
+    resize: none;
+}
+
+#contactme form input[type=submit] {
+    border: 2px solid var(--textColor);
+    color: var(--textColor);
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#contactme form input[type=submit]:hover {
+    color: #303030;
+    background-color: var(--mainColor);
+    border: none;
+}
+
+main .footer {
+    height: 50px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .backToTop {
+    height: 50px;
+    width: 50px;
+    border: 2px solid var(--mainColor);
+    border-radius: 25px;
+    position: relative;
+    left: calc(100% - 80px);
+    bottom: 120px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor);
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+main .backToTop:hover {
+    background: var(--mainColor);
+    color: var(--textColor);
+}
 
 /* animations */
 

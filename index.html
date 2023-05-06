@@ -11,18 +11,26 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
     <!-- header -->
     <header>
         <aside id="logo"><a href="index.html">Uma Sankar</a></aside>
-        <nav>
-            <a href="#" class="nav active">Home</a>
-            <a href="#about" class="nav">About Me</a>
-            <a href="#projects" class="nav">Projects</a>
-            <a href="#contactme" class="nav">Contact Me</a>
+        <nav id="sideBar">
+            <a href="#home" class="nav home active">Home</a>
+            <a href="#about" class="nav about">About Me</a>
+            <a href="#Languages" class="nav Languages">Languages</a>
+            <a href="#contactme" class="nav contactme">Contact Me</a>
         </nav>
+        <div id="menu">
+            <div>
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </div>
+        </div>
     </header>
 
     <!-- main -->
@@ -33,12 +41,18 @@
                 <h3>Hello <span>!</span></h3>
                 <h3>Welcome to My <span>Portfolio.</span></h3>
                 <h1>I'm <span id="typingEffect"></span></h1>
-                <p style="--i:5;">I'm Uma Sankar, from India. I'm currently learning Front-End Developement. I'm a beginner in Programming. See more about me in About Me section.</p>
+                <p style="--i:5;">I'm Uma Sankar, from India. I'm currently learning Front-End Developement. I'm a
+                    beginner in Programming.</p>
+                <!-- <a href="#about" style="--i: 6;" class="aboutBtnHome">About Me</a> -->
                 <aside id="socialMedia">
-                    <a  style="--i:6;" href="https://github.com/Sankar-2006"><i class="fa-brands fa-github fa-xl"></i></a>
-                    <a  style="--i:7;" href="https://instagram.com/sankar.2006"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                    <a  style="--i:8;" href="https://linkedin.com/in/uma-sankar-18105924b"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
-                    <a  style="--i:9;" href="https://twitter.com/Sankar14411087"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a style="--i:7;" href="https://github.com/Sankar-2006"><i
+                            class="fa-brands fa-github fa-xl"></i></a>
+                    <a style="--i:8;" href="https://instagram.com/sankar.2006"><i
+                            class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a style="--i:9;" href="https://linkedin.com/in/uma-sankar-18105924b"><i
+                            class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    <a style="--i:10;" href="https://twitter.com/Sankar14411087"><i
+                            class="fa-brands fa-twitter fa-xl"></i></a>
                 </aside>
             </article>
             <aside class="homeImage">
@@ -53,15 +67,62 @@
             </aside>
             <article class="aboutText">
                 <h2>About <span>Me</span></h2>
-                <p>Hello ! My name is Uma Sankar and I'm 16 years old aspiring programmer from South India. Currently I'm diving into the world of Programming. Although I'm at the beginning of my Programming journey, I'm dedicated to expanding my knowledge and keeping up with the latest industry trends. I belive that continuous learning and growth mindset are essential for personaland professional developement. Apart from programming, I also have a love for music and exploring the outdoors. These intrest provides me with inspiration and help me maintain a well-rounded perspective on life.</p>
-                <p hidden class="aboutPara2">I invite you to join me in this exciting journey as I strive to become a skilled programmer. Feel free to explore my Portfolio and get in touch if you'd like to connect, collaborate, or discuss any exciting opportunities. If you have any further questions, visit Contact Me section and feel free to ask. Thank you for visiting my website, and I look forward to connect with you !</p>
+                <p>Hello! I'm Uma Sankar, aspiring programmer from South India. Currently I'm
+                    diving into the world of Programming. Although I'm at the beginning of my Programming journey, I'm
+                    dedicated to expanding my knowledge and keeping up with the latest industry trends. I belive that
+                    continuous learning and growth mindset are essential for personaland professional developement.
+                    Apart from programming, I also have a love for music and exploring the outdoors. These intrest
+                    provides me with inspiration and help me maintain a well-rounded perspective on life.</p><br>
+                <p hidden class="aboutPara2">I invite you to join me in this exciting journey as I strive to become a
+                    skilled programmer. Feel free to explore my Portfolio and get in touch if you'd like to connect,
+                    collaborate, or discuss any exciting opportunities. If you have any further questions, visit Contact
+                    Me section and feel free to ask. Thank you for visiting my website, and I look forward to connect
+                    with you !</p>
                 <button class="readmore">Read More</button>
                 <button class="readless" hidden>Read Less</button>
             </article>
         </section>
 
-        
+        <!-- Languages -->
+
+        <section id="Languages">
+            <div class="HTML"><span></span>
+                <p>75 % <br>HTML</p>
+            </div>
+            <div class="CSS"><span></span>
+                <p>50 % <br>CSS</p>
+            </div>
+            <div class="JS"><span></span>
+                <p>25 % <br>JS</p>
+            </div>
+        </section>
+
+        <!-- contact me -->
+
+        <section id="contactme">
+            <h2>Contact <span>Me</span></h2>
+            <form action="#">
+                <aside class="inpt">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </aside>
+                <aside class="inpt">
+                    <input type="text" placeholder="Subject" class="subject">
+                </aside>
+                <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <p class="footer">Copyright &copy; 2023 by Sankar</p>
+        <a href="#home" class="fa-solid fa-angle-up backToTop"></a>
+
     </main>
+
+    <footer>
+
+    </footer>
+
+
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./js/nav.js"></script>
