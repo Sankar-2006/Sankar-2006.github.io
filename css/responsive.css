@@ -196,6 +196,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         position: absolute;
         transform: rotate(-5deg);
         top: -20px;
@@ -213,7 +214,6 @@
 
     nav a.nav {
         transform: rotate(5deg);
-        margin-top: 100px;
     }
 
     nav a.nav:nth-child(1),
@@ -226,21 +226,25 @@
     nav a.open:nth-child(1) {
         animation: top .5s ease forwards;
         animation-delay: calc(.2s * 1);
+        margin-top: 50px;
     }
 
     nav a.open:nth-child(2) {
         animation: top .5s ease forwards;
         animation-delay: calc(.2s * 2);
+        margin-bottom: 20px;
     }
 
     nav a.open:nth-child(3) {
         animation: top .5s ease forwards;
         animation-delay: calc(.2s * 3);
+        margin-bottom: 20px;
     }
 
     nav a.open:nth-child(4) {
         animation: top .5s ease forwards;
         animation-delay: calc(.2s * 4);
+        margin-bottom: 20px;
     }
 
     nav a.nav:hover::after {
@@ -269,13 +273,13 @@
     }
 
     .homeText h1 {
-        font-size: 33px;
-    font-weight: 600;
+        font-size: 30px;
+        font-weight: 600;
     }
 
-        .homeText h3 {
-            font-size: 28px;
-        }
+    .homeText h3 {
+        font-size: 28px;
+    }
 
     #Languages {
         flex-direction: column;
