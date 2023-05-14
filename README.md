@@ -1,4 +1,5 @@
 # Welcome
     This is my portfolio created with pure HTML, CSS, Js.
-# Note 
-    This is under Developement.
+
+# Visit 
+https://sankar-2006.github.io
