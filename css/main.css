@@ -218,7 +218,7 @@ main {
 }
 
 /* contact me */
-
+/*
 #contactme {
     height: 100vh;
     padding-top: 60px;
@@ -292,6 +292,8 @@ main {
     background-color: var(--mainColor);
     border: none;
 }
+
+*/
 
 main .footer {
     height: 50px;

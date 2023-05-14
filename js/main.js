@@ -1,4 +1,3 @@
-// main
 
 // home 
 
@@ -28,4 +27,3 @@ readLessButton.onclick = () => {
     aboutPara.hidden = true;
     readMoreButton.hidden = false;
 }
-
