@@ -3,7 +3,7 @@
 
 var typed = new Typed('#typingEffect', {
     strings: ['Uma Sankar.', 'Frontend Developer.'],
-    startDelay: 1600,
+    startDelay: 1700,
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1600,
