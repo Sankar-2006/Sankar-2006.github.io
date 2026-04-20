@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Uma Sankar, ECE student interested in embedded systems and communication engineering." />
+  <title>About | Uma Sankar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>UMA SANKAR</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation">
+          <span class="nav-toggle-line" aria-hidden="true"></span>
+          <span class="nav-toggle-line" aria-hidden="true"></span>
+          <span class="nav-toggle-line" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" data-page-link="home" href="index.html">Home</a></li>
+          <li><a class="nav-link" data-page-link="about" href="about.html">About</a></li>
+          <li><a class="nav-link" data-page-link="projects" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" data-page-link="contact" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="themeText">Dark</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="page-intro" data-animate>
+          <h1 class="section-title">About Me</h1>
+          <p class="section-subtitle">
+            I am Uma Sankar, an Electronics and Communication Engineering student with a strong interest in embedded systems,
+            practical circuit design, and engineering fundamentals.
+          </p>
+        </div>
+
+        <div class="grid grid-2" data-animate>
+          <article class="card">
+            <h2>Education</h2>
+            <p><strong>B.Tech - ECE</strong></p>
+            <p class="section-subtitle">Your College Name | 20XX - 20XX</p>
+            <ul class="timeline">
+              <li>Signals and Systems, Digital Electronics, Communication Engineering</li>
+              <li>Microcontrollers and IoT fundamentals</li>
+              <li>Academic project participation and technical workshops</li>
+            </ul>
+            <p class="notice">Hint: Update your college name, years, and exact academic details here.</p>
+          </article>
+
+          <article class="card">
+            <h2>What I Bring</h2>
+            <ul class="timeline">
+              <li>Hands-on prototyping with sensors and controllers</li>
+              <li>Problem solving through debugging and iteration</li>
+              <li>Clear technical communication and teamwork</li>
+            </ul>
+            <div class="pill-row">
+              <span class="pill">Embedded Basics</span>
+              <span class="pill">Hardware Debugging</span>
+              <span class="pill">Documentation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" data-animate>
+        <h2 class="section-title">Certifications and Activities</h2>
+        <p class="section-subtitle">Add your real records below so recruiters can quickly scan them.</p>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Certification 1</h3>
+            <p class="section-subtitle">Platform | Year</p>
+            <p>Briefly mention what skills you gained.</p>
+          </article>
+          <article class="card">
+            <h3>Workshop 1</h3>
+            <p class="section-subtitle">Institute | Year</p>
+            <p>Write a one-line impact statement.</p>
+          </article>
+          <article class="card">
+            <h3>Technical Event</h3>
+            <p class="section-subtitle">Role | Year</p>
+            <p>Mention your contribution and outcome.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Uma Sankar</span>
+      <a class="link" href="contact.html">Contact for opportunities</a>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

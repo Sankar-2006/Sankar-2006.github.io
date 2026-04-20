@@ -1,378 +1,180 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="UMA SANKAR — ECE student portfolio. Education, skills, projects, and contact." />
-  <meta name="theme-color" content="#0b1220" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="UMA SANKAR — Portfolio" />
-  <meta property="og:description" content="Professional portfolio for UMA SANKAR (ECE student): education, skills, projects, and contact." />
-  <meta property="og:type" content="website" />
-
-  <title>Uma Sankar</title>
+  <meta name="description" content="Uma Sankar - ECE student portfolio focused on embedded systems, projects, and career growth." />
+  <title>Uma Sankar | ECE Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
+      <a class="brand" href="index.html">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">UMA SANKAR</span>
+        <span>UMA SANKAR</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="nav-toggle-bar" aria-hidden="true"></span>
-          <span class="sr-only">Menu</span>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation">
+          <span class="nav-toggle-line" aria-hidden="true"></span>
+          <span class="nav-toggle-line" aria-hidden="true"></span>
+          <span class="nav-toggle-line" aria-hidden="true"></span>
         </button>
-
         <ul class="nav-menu" id="navMenu">
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#education">Education</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#certifications">Certifications</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" data-page-link="home" href="index.html">Home</a></li>
+          <li><a class="nav-link" data-page-link="about" href="about.html">About</a></li>
+          <li><a class="nav-link" data-page-link="projects" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" data-page-link="contact" href="contact.html">Contact</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
-          <span class="theme-icon" aria-hidden="true"></span>
-          <span class="theme-text" id="themeText">Dark</span>
+          <span class="theme-dot" aria-hidden="true"></span>
+          <span id="themeText">Dark</span>
         </button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
     <section class="section hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Electronics & Communication Engineering (ECE) Student</p>
-          <h1 class="hero-title">UMA SANKAR</h1>
+        <article data-animate="left">
+          <p class="eyebrow">ECE Student Portfolio</p>
+          <h1 class="hero-title">Uma Sankar</h1>
           <p class="hero-subtitle">
-            I’m an ECE student focused on fundamentals, communication systems, embedded concepts, and hands-on engineering.
-            I’m building a professional profile for internships and entry-level opportunities.
+            I am an Electronics and Communication Engineering student passionate about embedded systems,
+            practical electronics, and building reliable hardware-software solutions.
           </p>
 
-          <div class="hero-chips" aria-label="Highlights">
-            <span class="chip">ECE</span>
-            <span class="chip">Embedded Basics</span>
-            <span class="chip">Communication Systems</span>
-            <span class="chip">Problem Solving</span>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">View My Work</a>
+            <a class="btn btn-secondary" href="contact.html">Contact Me</a>
           </div>
 
-          <div class="hero-cta">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn secondary" href="#contact">Contact</a>
+          <div class="quick-links" aria-label="Profile links">
+            <a class="link" data-bind="github" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <span aria-hidden="true">|</span>
+            <a class="link" data-bind="linkedin" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span aria-hidden="true">|</span>
+            <a class="link" data-bind="resume" href="#" target="_blank" rel="noreferrer">Resume</a>
           </div>
+        </article>
 
-          <div class="hero-links" aria-label="Links">
-            <!-- Replace # with your real links later -->
-            <a class="link" href="https://github.com/Sankar-2006" target="_blank" rel="noreferrer">GitHub</a>
-            <span class="dot" aria-hidden="true">•</span>
-            <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
-            <span class="dot" aria-hidden="true">•</span>
-            <a class="link" href="#" target="_blank" rel="noreferrer">Resume</a>
-          </div>
-        </div>
-
-        <div class="hero-card" aria-label="Profile summary">
-          <div class="profile">
-            <div class="avatar" aria-hidden="true">
-              <span>US</span>
-            </div>
-
-            <div class="profile-meta">
-              <h2 class="profile-name">UMA SANKAR</h2>
-              <p class="profile-role">ECE Student</p>
+        <aside class="card hero-panel" data-animate="right" aria-label="Profile summary">
+          <div class="profile-row">
+            <div class="avatar" aria-hidden="true">US</div>
+            <div>
+              <h2 class="meta-title">Uma Sankar</h2>
+              <p class="meta-subtitle">ECE | Embedded Systems</p>
             </div>
           </div>
 
-          <div class="divider"></div>
-
-          <ul class="summary">
+          <ul class="stats">
             <li>
-              <span class="summary-k">Focus</span>
-              <span class="summary-v">Core ECE + practical learning</span>
+              <span class="stats-key">Primary Interest</span>
+              <span class="stats-value">Embedded Systems</span>
             </li>
             <li>
-              <span class="summary-k">Interests</span>
-              <span class="summary-v">Embedded, IoT, Networks, Signals</span>
+              <span class="stats-key">Current Focus</span>
+              <span class="stats-value">Microcontrollers and IoT</span>
             </li>
             <li>
-              <span class="summary-k">Location</span>
-              <span class="summary-v">India (update later)</span>
+              <span class="stats-key">Location</span>
+              <span class="stats-value" data-bind="location">Your City, India</span>
             </li>
           </ul>
+        </aside>
+      </div>
 
-          <div class="divider"></div>
-
-          <p class="micro">
-            Tip: You can update all placeholders later (projects, links, education). The layout is already professional and responsive.
-          </p>
-        </div>
+      <div class="container highlight-grid" data-animate>
+        <article class="card">
+          <p class="highlight-value">04+</p>
+          <p class="highlight-label">Academic and mini projects</p>
+        </article>
+        <article class="card">
+          <p class="highlight-value">ECE</p>
+          <p class="highlight-label">Core engineering track</p>
+        </article>
+        <article class="card">
+          <p class="highlight-value">Hands-on</p>
+          <p class="highlight-label">Circuit and prototype practice</p>
+        </article>
+        <article class="card">
+          <p class="highlight-value">2026</p>
+          <p class="highlight-label">Portfolio refreshed</p>
+        </article>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
+    <section class="section" data-animate>
       <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p class="muted">A short introduction for recruiters and collaborators.</p>
-        </div>
-
-        <div class="card">
-          <p>
-            I’m <strong>UMA SANKAR</strong>, an Electronics & Communication Engineering (ECE) student. I enjoy learning how real-world
-            systems work—from signals and circuits to communication networks and embedded devices. I’m actively improving my technical
-            knowledge and building project experience.
-          </p>
-          <p class="muted">
-            I’m currently looking for opportunities where I can learn, contribute, and grow with mentorship.
+        <div class="page-intro">
+          <h2 class="section-title">Career Objective</h2>
+          <p class="section-subtitle">
+            I am seeking internship and entry-level opportunities where I can apply ECE fundamentals,
+            learn industry workflows, and contribute to embedded product development.
           </p>
         </div>
-      </div>
-    </section>
 
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-head">
-          <h2>Education</h2>
-          <p class="muted">Add your college details and academic performance.</p>
-        </div>
-
-        <div class="grid-2">
+        <div class="grid grid-3">
           <article class="card">
-            <h3>B.Tech — Electronics & Communication Engineering</h3>
-            <p class="muted">Your College Name • 20XX — 20XX</p>
-            <ul class="bullets">
-              <li>Relevant coursework: Signals & Systems, Digital Electronics, Communication Systems</li>
-              <li>CGPA: X.XX (update later)</li>
-              <li>Activities: Tech club / Workshops (update later)</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Intermediate / Diploma / Higher Secondary</h3>
-            <p class="muted">Your Institute • 20XX — 20XX</p>
-            <ul class="bullets">
-              <li>Major: MPC / ECE / Science (update later)</li>
-              <li>Score: XX% (update later)</li>
-              <li>Highlights: Awards / Activities (update later)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-head">
-          <h2>Skills</h2>
-          <p class="muted">Keep this realistic and aligned with ECE.</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card">
-            <h3>Core ECE</h3>
-            <div class="tag-row">
-              <span class="tag">Digital Electronics</span>
-              <span class="tag">Analog Basics</span>
-              <span class="tag">Signals</span>
-              <span class="tag">Communication Systems</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Tools & Concepts</h3>
-            <div class="tag-row">
-              <span class="tag">Arduino (Basics)</span>
-              <span class="tag">Sensors</span>
-              <span class="tag">Breadboarding</span>
-              <span class="tag">Troubleshooting</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Professional</h3>
-            <div class="tag-row">
-              <span class="tag">Communication</span>
-              <span class="tag">Teamwork</span>
-              <span class="tag">Documentation</span>
-              <span class="tag">Time Management</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <h2>Projects</h2>
-          <p class="muted">Replace these placeholders with your real projects later.</p>
-        </div>
-
-        <div class="grid-3">
-          <article class="card project">
-            <div class="project-top">
-              <h3>Mini Project 1 — Smart Sensor System</h3>
-              <p class="muted">Arduino + sensor + basic monitoring</p>
-            </div>
-            <p>
-              Built a simple sensor-based system to read values and display/trigger actions. Focused on wiring, calibration,
-              and debugging.
-            </p>
-            <div class="project-meta">
-              <span class="pill">Embedded</span>
-              <span class="pill">Sensors</span>
+            <h3>Embedded Systems</h3>
+            <p>Working knowledge of Arduino, sensors, interfacing, calibration, and debugging workflows.</p>
+            <div class="pill-row">
               <span class="pill">Arduino</span>
-            </div>
-            <div class="project-links">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Code</a>
-              <span class="dot" aria-hidden="true">•</span>
-              <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <span class="pill">Sensors</span>
+              <span class="pill">GPIO</span>
             </div>
           </article>
 
-          <article class="card project">
-            <div class="project-top">
-              <h3>Mini Project 2 — Communication System Study</h3>
-              <p class="muted">Modulation/demodulation concepts (documentation)</p>
+          <article class="card">
+            <h3>Communication</h3>
+            <p>Strong foundation in communication systems concepts and signal-oriented problem solving.</p>
+            <div class="pill-row">
+              <span class="pill">Signals</span>
+              <span class="pill">Modulation</span>
+              <span class="pill">Systems</span>
             </div>
-            <p>
-              Documented communication concepts and compared techniques with examples. Prepared notes and diagrams for clarity.
-            </p>
-            <div class="project-meta">
-              <span class="pill">Communication</span>
+          </article>
+
+          <article class="card">
+            <h3>Professional Skills</h3>
+            <p>Clear communication, consistent documentation, and team-oriented execution under deadlines.</p>
+            <div class="pill-row">
+              <span class="pill">Teamwork</span>
               <span class="pill">Documentation</span>
-            </div>
-            <div class="project-links">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Report</a>
-            </div>
-          </article>
-
-          <article class="card project">
-            <div class="project-top">
-              <h3>Mini Project 3 — IoT Concept Prototype</h3>
-              <p class="muted">Basic device-to-dashboard idea</p>
-            </div>
-            <p>
-              Designed a simple prototype plan for collecting data and showing it on a dashboard. Focused on system design and flow.
-            </p>
-            <div class="project-meta">
-              <span class="pill">IoT</span>
-              <span class="pill">System Design</span>
-            </div>
-            <div class="project-links">
-              <a class="link" href="#" target="_blank" rel="noreferrer">Notes</a>
+              <span class="pill">Time Management</span>
             </div>
           </article>
         </div>
-      </div>
-    </section>
 
-    <!-- CERTIFICATIONS -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <div class="section-head">
-          <h2>Certifications</h2>
-          <p class="muted">Add course certificates/workshops (optional but useful).</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Workshop / Course Title</h3>
-            <p class="muted">Platform/Organization • Year</p>
-            <p>Short summary of what you learned and the skills gained.</p>
+        <div class="card cta-banner" data-animate>
+          <div>
+            <h3>Want to review my projects in detail?</h3>
+            <p class="section-subtitle">Explore dedicated project pages and contact me for internships or collaborations.</p>
           </div>
-
-          <div class="card">
-            <h3>Workshop / Course Title</h3>
-            <p class="muted">Platform/Organization • Year</p>
-            <p>Short summary of what you learned and the skills gained.</p>
-          </div>
+          <a class="btn btn-primary" href="projects.html">Open Projects</a>
         </div>
       </div>
     </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p class="muted">Add your email. The form uses mailto (no backend needed).</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Reach me</h3>
-            <ul class="contact-list">
-              <li><span class="contact-k">Email</span> <span class="contact-v"><a class="link" href="mailto:youremail@example.com">youremail@example.com</a></span></li>
-              <li><span class="contact-k">GitHub</span> <span class="contact-v"><a class="link" href="https://github.com/Sankar-2006" target="_blank" rel="noreferrer">@Sankar-2006</a></span></li>
-              <li><span class="contact-k">LinkedIn</span> <span class="contact-v"><a class="link" href="#" target="_blank" rel="noreferrer">Add link</a></span></li>
-            </ul>
-
-            <div class="divider"></div>
-
-            <p class="muted">
-              Prefer a resume button? Add your PDF as <code>resume.pdf</code> in the repo root and update the Resume link in the hero.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3>Quick message</h3>
-            <form id="contactForm">
-              <label class="field">
-                <span class="field-label">Your name</span>
-                <input class="input" name="name" type="text" placeholder="Enter your name" required />
-              </label>
-
-              <label class="field">
-                <span class="field-label">Subject</span>
-                <input class="input" name="subject" type="text" placeholder="Internship / Collaboration" required />
-              </label>
-
-              <label class="field">
-                <span class="field-label">Message</span>
-                <textarea class="textarea" name="message" rows="5" placeholder="Write your message..." required></textarea>
-              </label>
-
-              <button class="btn primary" type="submit">Open Email</button>
-              <p class="micro muted">This opens your mail app. No data is stored.</p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p class="muted">© <span id="year"></span> UMA SANKAR. All rights reserved.</p>
-        <a class="link" href="#top">Back to top</a>
-      </div>
-    </footer>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Uma Sankar</span>
+      <span>Built for internships and early-career opportunities</span>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
