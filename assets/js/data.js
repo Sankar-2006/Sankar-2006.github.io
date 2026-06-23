@@ -29,7 +29,7 @@ export const portfolioData = {
   contacts: {
     email: "yourmail@example.com", // TODO: Update your email
     phone: "+91-00000-00000", // TODO: Update your phone
-    linkedin: "https://www.linkedin.com/in/your-profile", // TODO: Update LinkedIn URL
+    linkedin: "https://www.linkedin.com/in/umasankar-g", // TODO: Update LinkedIn URL
     github: "https://github.com/Sankar-2006",
     resume: "#" // TODO: Add resume link (example: ./assets/resume.pdf)
   },
